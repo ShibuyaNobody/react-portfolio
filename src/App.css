@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Saira&display=swap');
+
+html {
+  background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+  background-color: black;
+  font-family: 'Convergence', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .nav-link {
+  margin: 8px 20px;
+  color: #C4995A;
+  font-family: 'Saira', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-brand {
+  font-family: 'Saira', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.collasible-nav-dropdown {
+  color: #C4995A;
+} */
+
+.banner {
+  background-image: url("components/images/Koi.jpeg");
+  background-size: cover;
+  padding: 180px 0px;
+  /* background-position-y: -50px; */
+}
+.filter {
+  /* background-color: rgba(0, 0, 0, .4); */
+  background-color: #000000;
+  color: black;
+  opacity: 0.4;
+  z-index :999;
+}
+.forward {
+  z-index: 1000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentBody {
+  background-color: #092023;
+  color: #ffffff;
+}
+
+.contentBg {
+  background-color: #C4995A;
+}
+
+.rounded-circle {
+  height: 250px;
+  width: auto;
+  border: 2px solid #C4995A;
+  background-color: #000000;
+  /* float: right;
+  margin: -100px 0 10px 20px;
+  z-index :999;
+  position: relative; */
+}
+/* .rounded-circle {
+  height: 250px;
+  width: auto;
+  border: 2px solid #C4995A;
+  background-color: #000000;
+  float: right;
+  margin: -100px 0 10px 20px;
+  z-index :999;
+  position: relative;
+} */
+
+.speech {
+  padding-top: 20px;
+}
+.content {
+  margin: 0px 20px;
+}
+
+.center {
+  margin: 0px auto;
+  display: block;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 30px;
+}
+
+.titleBg {
+  background-color: #000000;
+}
+
+.paddingSpace {
+  padding: 20px 0px;
+}
+
+.bgBox {
+  background-color: #204C67;
+  margin: 0px 40px;
+  border-radius: 15px;
+}
+.bgBoxcolor {
+  background-color: #204C67;
+  border-radius: 15px;
+}
+.card-body {
+  background-color: #204C67;
+}
+.btn-primary {
+  background-color: #C4995A;
 }

@@ -1,0 +1,13 @@
+.nav-link {
+    margin: 8px 20px;
+    color: #C4995A;
+    font-family: 'Saira', sans-serif;
+  }
+  
+  .navbar-brand {
+    font-family: 'Saira', sans-serif;
+  }
+  
+  .collasible-nav-dropdown {
+    color: #C4995A;
+  }

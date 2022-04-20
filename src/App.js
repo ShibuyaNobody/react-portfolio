@@ -26,6 +26,13 @@ function App() {
     aos.init({duration: 2000});
   }, []);
 
+  // bork
+  let audio = new Audio("/bark.mp3")
+
+  const start = () => {
+    audio.play()
+  }
+
   return (
     <>
       <div className='body'>
@@ -35,7 +42,7 @@ function App() {
         <Navbar.Brand style={{color: "#C4995A"}} href="#home">Rai Dela Rama</Navbar.Brand>
         <Nav className="ml-auto">
           <Nav.Link style={{color: "#C4995A"}} href="#home">Home</Nav.Link>
-          <Nav.Link style={{color: "#C4995A"}} href="#features">About</Nav.Link>
+          <Nav.Link style={{color: "#C4995A"}} href="#about">About</Nav.Link>
           <NavDropdown title="Projects" 
             id="collasible-nav-dropdown" 
             show={show}
@@ -58,7 +65,10 @@ function App() {
         {/* Banner */}
         <Row fluid className='banner'>
           {/* Banner image goes here */}
+          <Col className='bannerBg' lg={8}>
           <h2>Welcome to the Reapers Game!</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </Col>
         </Row>
         
         {/* Image and Speech bubble */}
@@ -81,8 +91,8 @@ function App() {
 
         <br></br>
 
-        <Row>
-          {/* Project 1 */}
+        {/* <Row>
+          
           <Col data-aos="zoom-in" fluid className='paddingSpace' lg={4} md={12}>
             <Card className='center' style={{ width: '18rem' }}>
               <Card.Img variant="top" src={require('./components/images/Annoying_Dog_sprite.gif')} />
@@ -96,7 +106,7 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          {/* Project 2 */}
+          
           <Col data-aos="zoom-in" fluid className='paddingSpace' lg={4} md={12}>
             <Card className='center' style={{ width: '18rem' }}>
               <Card.Img variant="top" src={require('./components/images/Annoying_Dog_sprite.gif')} />
@@ -110,7 +120,7 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          {/* Project 3 */}
+          
           <Col data-aos="zoom-in" fluid className='paddingSpace' lg={4} md={12}>
             <Card className='center' style={{ width: '18rem' }}>
               <Card.Img variant="top" src={require('./components/images/Annoying_Dog_sprite.gif')} />
@@ -124,11 +134,43 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
+        </Row> */}
+
+        <Row data-aos="fade-right" className='bgBoxPro'>
+          <Col lg={8}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </Col>
+          <Col lg={4}>
+            <Image fluid src={require('./components/images/Annoying_Dog_sprite.gif')} />
+          </Col>
         </Row>
 
         <br></br>
 
-        <Row data-aos="fade-left" className='titleBg'>
+        <Row data-aos="fade-left" className='bgBoxPro1'>
+          <Col lg={4}>
+            <Image fluid src={require('./components/images/Annoying_Dog_sprite.gif')} />
+          </Col>
+          <Col lg={8}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row data-aos="fade-right" className='bgBoxPro'>
+          <Col lg={8}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </Col>
+          <Col lg={4}>
+            <Image fluid src={require('./components/images/Annoying_Dog_sprite.gif')} />
+          </Col>
+        </Row>
+
+
+        <br></br>
+
+        <Row id="about" data-aos="fade-left" className='titleBg'>
           <Col>
             <h1 style={{ margin: '5px 62px', textAlign: 'right' }}>About Me</h1>
           </Col>
@@ -162,12 +204,13 @@ function App() {
             <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Title</h4>
             <ul>
               <li>Yes</li>
-            </ul>
-          </Col>
-          <Col  data-aos="zoom-in" className='center bgBoxcolor' lg={3}>
-            <br></br>
-            <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Title</h4>
-            <ul>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
               <li>Yes</li>
             </ul>
           </Col>
@@ -175,6 +218,29 @@ function App() {
             <br></br>
             <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Title</h4>
             <ul>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+            </ul>
+          </Col>
+          <Col  data-aos="zoom-in" className='center bgBoxcolor' lg={3}>
+            <br></br>
+            <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Title</h4>
+            <ul>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
+              <li>Yes</li>
               <li>Yes</li>
             </ul>
           </Col>
@@ -195,7 +261,7 @@ function App() {
 
         <Row>
           <Col>
-          <Image style={{ float: 'right', height: '50px', width: 'auto' }} src={require('./components/images/Annoying_Dog_sprite.gif')} />
+          <Image style={{ float: 'right', height: '50px', width: 'auto' }} src={require('./components/images/Annoying_Dog_sprite.gif')} onClick={start} />
           </Col>
         </Row>
 

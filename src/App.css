@@ -26,7 +26,7 @@ html {
 .banner {
   background-image: url("components/images/Koi.jpeg");
   background-size: cover;
-  padding: 180px 0px;
+  padding: 90px 0px;
   /* background-position-y: -50px; */
 }
 .filter {
@@ -109,4 +109,21 @@ html {
 }
 .btn-primary {
   background-color: #C4995A;
+}
+.bgBoxPro {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #204C67;
+  margin: 0px 40px;
+  padding: 20px 0px;
+}
+.bgBoxPro1 {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #204C67;
+  margin: 0px 40px;
+  padding: 20px 0px;
+}
+.bannerBg {
+  background-color: rgba(0, 0, 0, .7);
 }

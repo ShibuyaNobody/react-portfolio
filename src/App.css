@@ -85,6 +85,7 @@ html {
 .footer {
   background-color: #000000;
   padding: 30px;
+  text-align: center;
 }
 
 .titleBg {
@@ -126,4 +127,8 @@ html {
 }
 .bannerBg {
   background-color: rgba(0, 0, 0, .7);
+}
+.cycleText {
+  z-index: 10000;
+  position: relative;
 }

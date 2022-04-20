@@ -33,6 +33,29 @@ function App() {
     audio.play()
   }
 
+  const loopArr = [
+    "sentence1",
+    "sentence2",
+    "sentence3",
+    "sentence4",
+    "sentence5",
+    "sentence5 sentence5"
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalDelayMilliseconds = loopArr[index].length * 500;
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => {
+        // reset index if current index is greater than array size
+        return prevIndex + 1 < loopArr.length ? prevIndex + 1 : 0;
+      });
+    }, intervalDelayMilliseconds);
+
+    return () => clearInterval(interval);
+  });
+
   return (
     <>
       <div className='body'>
@@ -49,9 +72,9 @@ function App() {
             onMouseEnter={showDropdown} 
             onMouseLeave={hideDropdown}
             >
-              <NavDropdown.Item href="#action3">Project 1</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Project 2</NavDropdown.Item>
-              <NavDropdown.Item href="#action5">
+              <NavDropdown.Item href="#project1">Project 1</NavDropdown.Item>
+              <NavDropdown.Item href="#project2">Project 2</NavDropdown.Item>
+              <NavDropdown.Item href="#project3">
                 Project 3
               </NavDropdown.Item>
             </NavDropdown>
@@ -136,7 +159,7 @@ function App() {
           </Col>
         </Row> */}
 
-        <Row data-aos="fade-right" className='bgBoxPro'>
+        <Row data-aos="fade-right" className='bgBoxPro' id='project1'>
           <Col lg={8}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </Col>
@@ -147,7 +170,7 @@ function App() {
 
         <br></br>
 
-        <Row data-aos="fade-left" className='bgBoxPro1'>
+        <Row data-aos="fade-left" className='bgBoxPro1' id='project2'>
           <Col lg={4}>
             <Image fluid src={require('./components/images/Annoying_Dog_sprite.gif')} />
           </Col>
@@ -158,7 +181,7 @@ function App() {
 
         <br></br>
 
-        <Row data-aos="fade-right" className='bgBoxPro'>
+        <Row data-aos="fade-right" className='bgBoxPro' id='project3'>
           <Col lg={8}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </Col>
@@ -201,7 +224,7 @@ function App() {
         <Row>
           <Col  data-aos="zoom-in" className='center bgBoxcolor' lg={3}>
             <br></br>
-            <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Title</h4>
+            <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Programs</h4>
             <ul>
               <li>Yes</li>
               <li>Yes</li>
@@ -216,7 +239,7 @@ function App() {
           </Col>
           <Col  data-aos="zoom-in" className='center bgBoxcolor' lg={3}>
             <br></br>
-            <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Title</h4>
+            <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Languages</h4>
             <ul>
               <li>Yes</li>
               <li>Yes</li>
@@ -231,7 +254,7 @@ function App() {
           </Col>
           <Col  data-aos="zoom-in" className='center bgBoxcolor' lg={3}>
             <br></br>
-            <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Title</h4>
+            <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Social Skills</h4>
             <ul>
               <li>Yes</li>
               <li>Yes</li>

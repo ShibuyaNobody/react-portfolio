@@ -73,7 +73,7 @@ function App() {
 
         {/* <br></br> */}
 
-        <Row className='titleBg'>
+        <Row data-aos="fade-right" className='titleBg'>
           <Col>
             <h1 style={{ margin: '5px 62px' }}>Projects</h1>
           </Col>

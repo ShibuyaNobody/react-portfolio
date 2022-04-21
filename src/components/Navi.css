@@ -11,3 +11,10 @@
   .collasible-nav-dropdown {
     color: #C4995A;
   }
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: #C4995A;
+}

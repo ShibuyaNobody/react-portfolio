@@ -132,3 +132,15 @@ html {
   z-index: 10000;
   position: relative;
 }
+.reference {
+  color: #ffffff;
+}
+.reference:hover {
+  color: #C4995A;
+}
+.bodyText {
+  margin: 40px 0px 40px 40px;
+}
+.buttonCustom {
+  background-color: #C4995A;
+}

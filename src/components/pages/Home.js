@@ -31,9 +31,9 @@ export default function Home() {
       {/* Banner */}
       <Row fluid className='banner'>
           {/* Banner image goes here */}
-          <Col data-aos="fade" className='bannerBg' lg={8}>
-          <h2>Welcome to the Reapers Game!</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <Col data-aos="fade" className='bannerBg' lg={5}>
+          <h2>The names Rai! Got it memorized?</h2>
+          <p style={{ textAlign: 'right' }}>Aspiring Web Developer</p>
           </Col>
       </Row>
 
@@ -45,57 +45,15 @@ export default function Home() {
 
       <br></br>
 
-      {/* <Row>
-        
-        <Col data-aos="zoom-in" fluid className='paddingSpace' lg={4} md={12}>
-          <Card className='center' style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={require('./components/images/Annoying_Dog_sprite.gif')} />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </Card.Text>
-              <Button style={{ backgroundColor: '#C4995A', color: 'white', bordercolor: '#C4995A' }} variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        
-        <Col data-aos="zoom-in" fluid className='paddingSpace' lg={4} md={12}>
-          <Card className='center' style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={require('./components/images/Annoying_Dog_sprite.gif')} />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </Card.Text>
-              <Button style={{ backgroundColor: '#C4995A', color: 'white', bordercolor: '#C4995A' }} variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        
-        <Col data-aos="zoom-in" fluid className='paddingSpace' lg={4} md={12}>
-          <Card className='center' style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={require('./components/images/Annoying_Dog_sprite.gif')} />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-              </Card.Text>
-              <Button style={{ backgroundColor: '#C4995A', color: 'white', borderColor: '#C4995A' }} variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row> */}
-
       <Row data-aos="fade-right" className='bgBoxPro' id='project1'>
         <Col lg={8}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p className='bodyText'>This project was one of my assignments for my UI/UX Design class in which we take a website and re-design it. The website I had chosen to re-design is <a className='reference' href='https://www.njoy.us/'>Njoy Games and Comics</a>. Njoy Games & Comics is a small comic book store that is located along Reseda Blvd in Northridge, California. They have been in business from 2002 to today. They specialize in the sales of comic books, playing cards, and other collectibles.
+          <br></br>
+          <br></br>
+          <Link to='/project-1'><Button style={{ float: 'right' }} variant='light'>Check it out!</Button></Link></p>
         </Col>
         <Col lg={4}>
-          <Image fluid src={require('./../images/Annoying_Dog_sprite.gif')} />
+          <Image fluid className='center' src={require('./../images/njoy_logo_redo3.png')} />
         </Col>
       </Row>
 
@@ -103,10 +61,13 @@ export default function Home() {
 
       <Row data-aos="fade-left" className='bgBoxPro1' id='project2'>
         <Col lg={4}>
-          <Image fluid src={require('./../images/Annoying_Dog_sprite.gif')} />
+          <Image className='center' fluid src={require('./../images/Annoying_Dog_sprite.gif')} />
         </Col>
         <Col lg={8}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <p className='bodyText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <br></br>
+            <br></br>
+            <Link to='/project-2'><Button variant='light'>Check it out!</Button></Link></p>
         </Col>
       </Row>
 
@@ -142,7 +103,7 @@ export default function Home() {
           <Image fluid className='rounded-circle' src={require('./../images/raikiridesu2.png')} />
         </Col>
         <Col className='paddingSpace' lg={9}>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p className='bodyText'>Hi! My name is Rai, and I'm aspiring to be a web developer. I studied at California State University of Northridge and majored in Computer Information Technology with a minor of Art.</p>
         </Col>
       </Row>
 
@@ -161,45 +122,45 @@ export default function Home() {
           <br></br>
           <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Programs</h4>
           <ul>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe InDesign</li>
+            <li>Google Suite</li>
+            <li>Office 365</li>
+            {/* <li>Yes</li>
             <li>Yes</li>
             <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
+            <li>Yes</li> */}
           </ul>
         </Col>
         <Col  data-aos="zoom-in" className='center bgBoxcolor' lg={3}>
           <br></br>
-          <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Languages</h4>
+          <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Skills</h4>
           <ul>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>Bash</li>
+            <li>Powershell</li>
+            <li>Terraform</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Docker</li>
+            <li>Bootstrap</li>
           </ul>
         </Col>
         <Col  data-aos="zoom-in" className='center bgBoxcolor' lg={3}>
           <br></br>
           <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Social Skills</h4>
           <ul>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li>
+            <li>Communication</li>
+            <li>Video and Remote Skills</li>
+            <li>Active Listening</li>
+            <li>Problem Solving</li>
+            <li>Management</li>
+            <li>Leadership</li>
+            <li>Organization</li>
+            <li>Teamwork</li>
+            {/* <li>Yes</li> */}
           </ul>
         </Col>
       </Row>
@@ -208,7 +169,7 @@ export default function Home() {
 
       <Row data-aos="fade-up" className='bgBoxcolor'>
         <Col lg={5}>
-          <h4 style={{ textAlign: 'center' }}>Social</h4>
+          <h4 style={{ textAlign: 'center' }}>Checkout these links as well!</h4>
         </Col>
         <Col lg={7}>
           Put social icons here with clickable links to LinkedIn, GitHub, and such. Right align?

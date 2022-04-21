@@ -23,7 +23,7 @@ function Navi() {
         <Navbar.Brand style={{color: "#C4995A"}} href="/">Rai Dela Rama</Navbar.Brand>
         <Nav className="ml-auto">
           <Nav.Link style={{color: "#C4995A"}} href="/">Home</Nav.Link>
-          <Nav.Link style={{color: "#C4995A"}} href="#about">About</Nav.Link>
+          <Nav.Link style={{color: "#C4995A"}} href="about-me">About</Nav.Link>
           <NavDropdown title="Projects" 
             id="collasible-nav-dropdown" 
             // show={show}

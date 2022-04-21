@@ -59,7 +59,7 @@ html {
   z-index :999;
   position: relative; */
 }
-/* .rounded-circle {
+.profile {
   height: 250px;
   width: auto;
   border: 2px solid #C4995A;
@@ -68,7 +68,8 @@ html {
   margin: -100px 0 10px 20px;
   z-index :999;
   position: relative;
-} */
+  border-radius: 50%;
+}
 
 .speech {
   padding-top: 20px;
@@ -127,6 +128,7 @@ html {
 }
 .bannerBg {
   background-color: rgba(0, 0, 0, .7);
+  padding-top: 10px;
 }
 .cycleText {
   z-index: 10000;
@@ -144,3 +146,4 @@ html {
 .buttonCustom {
   background-color: #C4995A;
 }
+.tab { text-indent:40px }

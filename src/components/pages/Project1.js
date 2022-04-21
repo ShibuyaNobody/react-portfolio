@@ -12,7 +12,7 @@ export default function Project1() {
   }, []);
   return (
     <>
-        <Row data-aos="linear" fluid className='banner'>
+      <Row fluid className='banner'>
           {/* Banner image goes here */}
           <Col lg={8}>
             <br></br>
@@ -24,10 +24,23 @@ export default function Project1() {
 
         <Row>
             <Col>
-                <Image />
+            <Image data-aos="fade-in" className='center' fluid src={require('./../images/njoy_banner.png')} />
             </Col>
         </Row>
         
+        <br></br>
+
+        <Row>
+            <Col lg={4}>
+                <Image data-aos="fade-in" className='center' style={{ height: '200px' }} fluid src={require('./../images/njoy_body.png')} />
+            </Col>
+            <Col lg={4}>
+                <Image data-aos="fade-in" className='center' style={{ height: '200px' }} fluid src={require('./../images/njoy_shoppingcart.png')} />
+            </Col>
+            <Col lg={4}>
+                <Image data-aos="fade-in" className='center' style={{ height: '200px' }} fluid src={require('./../images/njoy_comics.png')} />
+            </Col>
+        </Row>
     </>
   )
 }

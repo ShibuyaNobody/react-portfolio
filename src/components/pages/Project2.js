@@ -12,14 +12,35 @@ export default function Project2() {
   }, []);
   return (
     <>
-        <Row fluid className='banner'>
+      <Row fluid className='banner'>
           {/* Banner image goes here */}
           <Col lg={8}>
             <br></br>
             <br></br>
           </Col>
         </Row>
-        <h1>Project 2</h1>
+
+        <br></br>
+
+        <Row>
+            <Col>
+            <Image data-aos="fade-in" className='center' fluid src={require('./../images/ouranimelist_home.png')} />
+            </Col>
+        </Row>
+        
+        <br></br>
+
+        <Row>
+            <Col lg={4}>
+                <Image data-aos="fade-in" className='center' style={{ height: '200px' }} fluid src={require('./../images/ouranimelist_home_body.png')} />
+            </Col>
+            <Col lg={4}>
+                <Image data-aos="fade-in" className='center' style={{ height: '200px' }} fluid src={require('./../images/ouranimelist_about.png')} />
+            </Col>
+            <Col lg={4}>
+                <Image data-aos="fade-in" className='center' style={{ height: '200px' }} fluid src={require('./../images/ouranimelist_modal.png')} />
+            </Col>
+        </Row>
     </>
   )
 }

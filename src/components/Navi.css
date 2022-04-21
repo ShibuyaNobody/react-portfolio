@@ -2,6 +2,8 @@
     margin: 8px 20px;
     color: #C4995A;
     font-family: 'Saira', sans-serif;
+    -webkit-transition: color .8s; /* For Safari 3.0 to 6.0 */
+    transition: color .8s; /* For modern browsers */
   }
   
   .navbar-brand {
@@ -12,9 +14,13 @@
     color: #C4995A;
   }
   a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #000000;
+    -webkit-transition: color .8s; /* For Safari 3.0 to 6.0 */
+    transition: color .8s; /* For modern browsers */
   }
   .navbar-dark .navbar-nav .nav-link {
     color: #C4995A;
+    -webkit-transition: color .8s; /* For Safari 3.0 to 6.0 */
+    transition: color .8s; /* For modern browsers */
 }

@@ -17,8 +17,8 @@ function Navi() {
     const [isClicked, setIsClicked] = useState(false);
 
     return (
-        <>
-            <Navbar variant="dark">
+        <><div className='titleBg'>
+            {/* <Navbar variant="dark">
       <Container>
         <Navbar.Brand style={{color: "#C4995A"}} href="/">Rai Dela Rama</Navbar.Brand>
         <Nav className="ml-auto">
@@ -53,7 +53,30 @@ function Navi() {
             </NavDropdown>
         </Nav>
         </Container>
-      </Navbar>
+      </Navbar> */}
+
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar.Brand href="/">
+
+        Rai Dela Rama
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="ms-auto">
+          <Nav.Link href="/">Home</Nav.Link>
+          <Nav.Link href="/about-me">About</Nav.Link>
+          <NavDropdown title="Dropdown" id="collasible-nav-dropdown"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          onToggle={() => setIsClicked(!isClicked)}
+          show={isClicked || isHovered}>
+            <NavDropdown.Item href="/project-1">Project 1</NavDropdown.Item>
+            <NavDropdown.Item href="/project-2">Project 2</NavDropdown.Item>
+            <NavDropdown.Item href="/project-3">Project 3</NavDropdown.Item>
+          </NavDropdown>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar></div>
         </>
     )
 }

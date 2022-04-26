@@ -12,6 +12,7 @@ import Project2 from './components/pages/Project2';
 import Project3 from './components/pages/Project3';
 import aos from 'aos';
 import 'aos/dist/aos.css';
+import { BsLinkedin, BsGithub  } from "react-icons/bs";
 
 function App() {
   // These functions are used to allow the dropdown on hover with bootstraps Navbar
@@ -87,8 +88,23 @@ function App() {
 
         {/* Footer */}
         <Row className='footer'>
-          <Col>
-            This is a footer uwu
+          <Col lg={6}>
+            <h5>Rai Dela Rama</h5>
+            <p style={{ fontSize: '10pt' }}>This page was built and designed using React.js</p>
+            
+          </Col>
+          <Col lg={3}>
+            <p style={{ fontSize: '10pt' }}>
+              <a className='textColor' href='/about-me'>About Me</a> <br />
+              Contact <br />
+              Resume
+            </p>
+          </Col>
+          <Col lg={3}>
+            <p>
+              <a style={{ fontSize: '10pt' }} className='textColor' href='mailto:raidelarama@gmail.com'>raidelarama@gmail.com</a> <br />
+              <a style={{ fontSize: '20pt' }} className='iconColor' href='https://www.linkedin.com/in/rachel-dela-rama/' target={'_blank'}><BsLinkedin /></a> <a style={{ fontSize: '20pt' }} className='iconColor' href='https://github.com/ShibuyaNobody' target={'_blank'}><BsGithub /></a>
+            </p>
           </Col>
         </Row>
       </Container>

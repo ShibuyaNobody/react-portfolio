@@ -86,7 +86,7 @@ html {
 .footer {
   background-color: #000000;
   padding: 30px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .titleBg {
@@ -147,3 +147,34 @@ html {
   background-color: #C4995A;
 }
 .tab { text-indent:40px }
+.bgColor {
+  background-color: #204C67;
+  /* padding: 0px 50px; */
+}
+.iconColor {
+  color: #ffffff;
+  padding: 0px 5px;
+}
+.iconColor:hover {
+  color: #C4995A;
+}
+.textColor {
+  color: #ffffff;
+  text-decoration: none;
+}
+.textColor:hover {
+  color: #C4995A;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #204C67;
+  /* outline: 1px solid slategrey; */
+  border-radius: 50px;
+}

@@ -65,7 +65,7 @@ export default function AboutMe() {
 
         {/* Body Content */}
         <Row data-aos="slide-up">
-          <Col className='bgBox paddingSpace'>
+          <Col className='bgColor paddingSpace'>
             
           <h5 style={{ textAlign: 'center' }}><i>"The World Ends With You. If you want to enjoy life, expand your world. You gotta push your horizons as far as they'll go."</i></h5>
 
@@ -80,7 +80,7 @@ export default function AboutMe() {
 
         <br></br>
 
-        <Row>
+        <Row className='bgColor'>
           <Col data-aos="slide-up" className='bgBox paddingSpace' lg={5}>
             <h4>Check out these socials!</h4>
           </Col>

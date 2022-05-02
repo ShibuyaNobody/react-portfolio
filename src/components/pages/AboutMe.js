@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
 import aos from 'aos';
 import 'aos/dist/aos.css';
+import { BsLinkedin, BsGithub, BsCloudDownloadFill  } from "react-icons/bs";
 
 export default function AboutMe() {
   // This will allow the scroll animations to work
@@ -80,13 +81,82 @@ export default function AboutMe() {
 
         <br></br>
 
-        <Row className='bgColor'>
-          <Col data-aos="slide-up" className='bgBox paddingSpace' lg={5}>
-            <h4>Check out these socials!</h4>
+        <Row data-aos="fade-right" className='titleBg d-lg-block d-md-none d-sm-none d-none'>
+        <Col>
+          <h1 style={{ margin: '5px 62px' }}>Skills</h1>
+        </Col>
+      </Row>
+
+      <Row data-aos="fade-right" className='titleBg d-lg-none d-md-block d-sm-none'>
+        <Col>
+          <h1 style={{ margin: '5px 0px' }}>Skills</h1>
+        </Col>
+      </Row>
+
+      <br></br>
+
+      <Row>
+        <Col style={{ marginBottom: '10px' }} data-aos="zoom-in" className='center bgColor' lg={3}>
+          <br></br>
+          <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Programs</h4>
+          <ul>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Photoshop</li>
+            <li>Adobe InDesign</li>
+            <li>Google Suite</li>
+            <li>Office 365</li>
+            <li>Figma</li>
+            {/* <li>Yes</li>
+            <li>Yes</li>
+            <li>Yes</li> */}
+          </ul>
+        </Col>
+        <Col style={{ marginBottom: '10px' }}  data-aos="zoom-in" className='center bgColor' lg={3}>
+          <br></br>
+          <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Skills</h4>
+          <ul>
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>Bash</li>
+            <li>Powershell</li>
+            <li>Terraform</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Docker</li>
+            <li>Bootstrap</li>
+          </ul>
+        </Col>
+        <Col style={{ marginBottom: '10px' }} data-aos="zoom-in" className='center bgColor' lg={3}>
+          <br></br>
+          <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Social Skills</h4>
+          <ul>
+            <li>Communication</li>
+            <li>Video and Remote Skills</li>
+            <li>Active Listening</li>
+            <li>Problem Solving</li>
+            <li>Management</li>
+            <li>Leadership</li>
+            <li>Organization</li>
+            <li>Teamwork</li>
+            {/* <li>Yes</li> */}
+          </ul>
+        </Col>
+      </Row>
+
+        <br></br>
+
+        <Row className=''>
+          <Col className=' paddingSpace'>
+            <h4 data-aos="fade-up" style={{ textAlign: 'center' }}>Check out these socials!</h4>
+            <p style={{ textAlign: 'center' }}>
+            <a data-aos="fade-up" data-aos-duration="10000" style={{ fontSize: '60pt', padding: '0px 40px' }} className='iconColor' href='https://www.linkedin.com/in/rachel-dela-rama/' target={'_blank'}><BsLinkedin /></a>
+            <a data-aos="fade-up" data-aos-duration="6000" style={{ fontSize: '60pt', padding: '0px 40px' }} className='iconColor' href='https://github.com/ShibuyaNobody' target={'_blank'}><BsGithub /></a>
+            <a data-aos="fade-up" data-aos-duration="2000" style={{ fontSize: '60pt', padding: '0px 40px' }} className='iconColor' href="../assets/Rai_DelaRama_Resume2022.pdf" target='_parent'><BsCloudDownloadFill /></a>
+            </p>
           </Col>
-          <Col data-aos="slide-up" lg={6}>
-            <Image style={{ borderRadius: '15px' }} fluid src={require('./../images/cardistry.png')}/>
-          </Col>
+          {/* <Col data-aos="fade-in" data-aos-duration="4000" lg={6}>
+            <Image style={{  }} fluid src={require('./../images/cardistry.png')}/>
+          </Col> */}
         </Row>
 
     </>

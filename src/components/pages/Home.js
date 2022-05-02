@@ -21,7 +21,7 @@ export default function Home() {
     aos.init({duration: 2000});
   }, []);
   // bork
-  let audio = new Audio("/bark.mp3")
+  let audio = new Audio("../assets/bark.mp3")
 
   const start = () => {
     audio.play()
@@ -37,9 +37,14 @@ export default function Home() {
           </Col>
       </Row>
 
-      <Row data-aos="fade-right" className='titleBg'>
+      <Row data-aos="fade-right" className='titleBg  d-lg-block d-md-none d-sm-none d-none'>
         <Col>
           <h1 style={{ margin: '5px 62px' }}>Projects</h1>
+        </Col>
+      </Row>
+      <Row data-aos="fade-right" className='titleBg d-lg-none d-md-block d-sm-none'>
+        <Col>
+          <h1 style={{ margin: '5px 0px' }}>Projects</h1>
         </Col>
       </Row>
 
@@ -95,9 +100,15 @@ export default function Home() {
 
       <br></br>
 
-      <Row id="about" data-aos="fade-left" className='titleBg'>
+      <Row id="about" data-aos="fade-left" className='titleBg d-lg-block d-md-none d-sm-none d-none'>
         <Col>
           <h1 style={{ margin: '5px 62px', textAlign: 'right' }}>About Me</h1>
+        </Col>
+      </Row>
+
+      <Row id="about" data-aos="fade-left" className='titleBg d-lg-none d-md-block d-sm-none'>
+        <Col>
+          <h1 style={{ margin: '5px 0px', textAlign: 'right' }}>About Me</h1>
         </Col>
       </Row>
 
@@ -115,16 +126,22 @@ export default function Home() {
 
       <br></br>
 
-      <Row data-aos="fade-right" className='titleBg'>
+      {/* <Row data-aos="fade-right" className='titleBg d-lg-block d-md-none d-sm-none d-none'>
         <Col>
           <h1 style={{ margin: '5px 62px' }}>Skills</h1>
+        </Col>
+      </Row>
+
+      <Row data-aos="fade-right" className='titleBg d-lg-none d-md-block d-sm-none'>
+        <Col>
+          <h1 style={{ margin: '5px 0px' }}>Skills</h1>
         </Col>
       </Row>
 
       <br></br>
 
       <Row>
-        <Col  data-aos="zoom-in" className='center bgColor' lg={3}>
+        <Col style={{ marginBottom: '10px' }} data-aos="zoom-in" className='center bgColor' lg={3}>
           <br></br>
           <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Programs</h4>
           <ul>
@@ -134,12 +151,9 @@ export default function Home() {
             <li>Google Suite</li>
             <li>Office 365</li>
             <li>Figma</li>
-            {/* <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li> */}
           </ul>
         </Col>
-        <Col  data-aos="zoom-in" className='center bgColor' lg={3}>
+        <Col style={{ marginBottom: '10px' }}  data-aos="zoom-in" className='center bgColor' lg={3}>
           <br></br>
           <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Skills</h4>
           <ul>
@@ -154,7 +168,7 @@ export default function Home() {
             <li>Bootstrap</li>
           </ul>
         </Col>
-        <Col  data-aos="zoom-in" className='center bgColor' lg={3}>
+        <Col style={{ marginBottom: '10px' }} data-aos="zoom-in" className='center bgColor' lg={3}>
           <br></br>
           <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Social Skills</h4>
           <ul>
@@ -166,10 +180,9 @@ export default function Home() {
             <li>Leadership</li>
             <li>Organization</li>
             <li>Teamwork</li>
-            {/* <li>Yes</li> */}
           </ul>
         </Col>
-      </Row>
+      </Row> */}
 
       {/* <br></br> */}
 

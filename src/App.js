@@ -13,6 +13,8 @@ import Project3 from './components/pages/Project3';
 import aos from 'aos';
 import 'aos/dist/aos.css';
 import { BsLinkedin, BsGithub  } from "react-icons/bs";
+import ScrollButton from './components/ScrollButton';
+import { Content, Heading } from './components/Styles';
 
 function App() {
   // These functions are used to allow the dropdown on hover with bootstraps Navbar
@@ -108,6 +110,7 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <ScrollButton />
       </div>
     </>
   );

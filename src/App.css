@@ -106,9 +106,6 @@ html {
   background-color: #204C67;
   border-radius: 15px;
 }
-.card-body {
-  background-color: #204C67;
-}
 .btn-primary {
   background-color: #C4995A;
 }
@@ -177,4 +174,29 @@ body::-webkit-scrollbar-thumb {
   background-color: #204C67;
   /* outline: 1px solid slategrey; */
   border-radius: 50px;
+}
+.scrollTop {
+  position: fixed; 
+  left: 1450px;
+  width: 50px;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.8;
+}
+.scrollTop:hover{
+  opacity: 1;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }

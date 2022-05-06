@@ -23,6 +23,93 @@ export default function Project1() {
         <br></br>
 
         <Row>
+          <Col>
+            <h3>What is Njoy Game & Comics?</h3>
+            <p>Njoy Games & COmics is a small comic book store that is located along Reseda Blvd, Northridge, California. They have been in business from 2002 to today. They specialize in the sales of comic books, playing cards, and other collectibles.</p>
+          </Col>
+          <Col>
+            <Image fluid src='https://www.njoy.us/includes/templates/bohase/images/logo/logo_sm3.gif' />
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
+          <Col>
+            <h3>So why the redesign?</h3>
+            <p>The reason I had decided to go ahead and redesign this site is because there were a couple of issues on the page itself. To start things off, lets look at their current Navigation Bar.</p>
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
+          <Col lg={4}>
+            <ul>
+              <li>
+                There are many navigation options that make it extend to a second row, creating a sort of widow look on the navigation bar.
+              </li>
+              <li>
+                Not all the navigation options lead to the proper page
+              </li>
+              <li>
+                Search bar is awkwardly placed on the bottom right
+              </li>
+              <li>
+                Dropdown for the navigation items stop working when you click on any of them
+              </li>
+            </ul>
+          </Col>
+          <Col>
+            <Image fluid className='center' src={require('./../images/njoy_searchbar.png')}/>
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
+          <Col>
+          <Image fluid className='center' src={require('./../images/njoy_footer.png')}/>
+          </Col>
+          <Col>
+            <ul>
+              <li>
+                Some of the images on the footer are awkwardly clipping onto the main content of the page
+              </li>
+              <li>
+                When you go onto other pages on the site the footer disappears
+              </li>
+            </ul>
+          </Col>
+        </Row>
+
+        {/* <br></br>
+
+        <Row>
+          <Col>
+            <h3>Some other issues</h3>
+            <ul>
+              <li>
+                Pages were unorganized and messy
+              </li>
+              <li>
+                A lot of the navigation items were pointless and led nowhere
+              </li>
+            </ul>
+          </Col>
+        </Row> */}
+
+        <br></br>
+
+        <Row>
+          <Col>
+            <h1>The redesign</h1>
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
             <Col>
             <Image data-aos="fade-in" className='center' fluid src={require('./../images/njoy_banner.png')} />
             </Col>
@@ -40,6 +127,14 @@ export default function Project1() {
             <Col lg={4}>
                 <Image data-aos="fade-in" className='center' style={{ height: '200px' }} fluid src={require('./../images/njoy_comics.png')} />
             </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
+          <Col>
+            <p>For this websites redesign, I wanted to give the page a more comic book feel to it, while also making it look more modern and appearling s well. From what you saw of the previous images that were </p>
+          </Col>
         </Row>
     </>
   )

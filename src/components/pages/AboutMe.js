@@ -15,32 +15,7 @@ export default function AboutMe() {
   }, []);
 
   return (
-    <>
-      {/* Navigation Bar */}
-      
-      {/* <Navbar variant="dark">
-      <Container>
-        <Navbar.Brand style={{color: "#C4995A"}} href="#home">Rai Dela Rama</Navbar.Brand>
-        <Nav className="ml-auto">
-          <Nav.Link style={{color: "#C4995A"}} href="#home">Home</Nav.Link>
-          <Nav.Link style={{color: "#C4995A"}} href="#features">About</Nav.Link>
-          <NavDropdown title="Projects" 
-            id="collasible-nav-dropdown" 
-            show={show}
-            onMouseEnter={showDropdown} 
-            onMouseLeave={hideDropdown}
-            >
-              <NavDropdown.Item href="#action3">Project 1</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Project 2</NavDropdown.Item>
-              <NavDropdown.Item href="#action5">
-                Project 3
-              </NavDropdown.Item>
-            </NavDropdown>
-        </Nav>
-        </Container>
-      </Navbar> */}
-      
-
+    <> 
       {/* Body Content */}
         {/* Banner */}
         <Row fluid className='banner'>
@@ -151,7 +126,7 @@ export default function AboutMe() {
             <p style={{ textAlign: 'center' }}>
             <a data-aos="fade-up" data-aos-duration="10000" style={{ fontSize: '60pt', padding: '0px 40px' }} className='iconColor' href='https://www.linkedin.com/in/rachel-dela-rama/' target={'_blank'}><BsLinkedin /></a>
             <a data-aos="fade-up" data-aos-duration="6000" style={{ fontSize: '60pt', padding: '0px 40px' }} className='iconColor' href='https://github.com/ShibuyaNobody' target={'_blank'}><BsGithub /></a>
-            <a data-aos="fade-up" data-aos-duration="2000" style={{ fontSize: '60pt', padding: '0px 40px' }} className='iconColor' href="../assets/Rai_DelaRama_Resume2022.pdf" target='_parent'><BsCloudDownloadFill /></a>
+            <a data-aos="fade-up" data-aos-duration="2000" style={{ fontSize: '60pt', padding: '0px 40px' }} className='iconColor' href="https://drive.google.com/file/d/1be13iP5cijAPuqHotkEMBycITQBzChgK/view?usp=sharing" target='_blank'><BsCloudDownloadFill /></a>
             </p>
           </Col>
           {/* <Col data-aos="fade-in" data-aos-duration="4000" lg={6}>

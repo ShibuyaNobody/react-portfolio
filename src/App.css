@@ -188,6 +188,7 @@ body::-webkit-scrollbar-thumb {
   animation: fadeIn 0.3s;
   transition: opacity 0.4s;
   opacity: 0.8;
+  float: right;
 }
 .scrollTop:hover{
   opacity: 1;

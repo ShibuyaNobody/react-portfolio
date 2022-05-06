@@ -10,6 +10,7 @@ import AboutMe from './components/pages/AboutMe';
 import Project1 from './components/pages/Project1';
 import Project2 from './components/pages/Project2';
 import Project3 from './components/pages/Project3';
+import Contact from './components/pages/Contact';
 import aos from 'aos';
 import 'aos/dist/aos.css';
 import { BsLinkedin, BsGithub  } from "react-icons/bs";
@@ -76,6 +77,7 @@ function App() {
             <Route path="/project-1" element={<Project1 />} />
             <Route path="/project-2" element={<Project2 />} />
             <Route path="/project-3" element={<Project3 />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </Router>
 
@@ -98,8 +100,8 @@ function App() {
           <Col lg={3}>
             <p style={{ fontSize: '10pt' }}>
               <a className='textColor' href='/about-me'>About Me</a> <br />
-              Contact <br />
-              Resume
+              <a className='textColor' href='/contact'>Contact</a> <br />
+              <a className='textColor' href="https://drive.google.com/file/d/1be13iP5cijAPuqHotkEMBycITQBzChgK/view?usp=sharing" target={'_blank'}>Resume</a>
             </p>
           </Col>
           <Col lg={3}>

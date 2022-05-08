@@ -52,6 +52,36 @@ export default function Project3() {
 
         <Row>
           <Col>
+            <h1>The original design</h1>
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
+          <Col>
+            <p>When we had first started working on Our Anime List we had no experience with React yet, so the page was primarily made using basic HTML with the help of the Bootstrap library. The screenshots below are what the original website used to look like before we had decided to make the switch over to React. The main reason we wanted to switch React was so that we can get the My Anime List API to connect together with our webpage.</p>
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
+          <Col lg={4}>
+            <Image data-aos="fade-in" className='center' fluid src={require('./../images/og_ouranimelist_homepage.png')} />
+          </Col>
+          <Col lg={4}>
+            <Image data-aos="fade-in" className='center' fluid src={require('./../images/og_ouranimelist_about.png')} />
+          </Col>
+          <Col lg={4}>
+            <Image data-aos="fade-in" className='center' fluid src={require('./../images/og_ouranimelist_profile.png')} />
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
+          <Col>
             <h1>The redesign</h1>
           </Col>
         </Row>

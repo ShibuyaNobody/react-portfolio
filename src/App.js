@@ -13,7 +13,7 @@ import Project3 from './components/pages/Project3';
 import Contact from './components/pages/Contact';
 import aos from 'aos';
 import 'aos/dist/aos.css';
-import { BsLinkedin, BsGithub  } from "react-icons/bs";
+import { BsLinkedin, BsGithub, BsCloudDownloadFill  } from "react-icons/bs";
 import ScrollButton from './components/ScrollButton';
 
 function App() {
@@ -100,13 +100,13 @@ function App() {
             <p style={{ fontSize: '10pt' }}>
               <a className='textColor' href='/about-me'>About Me</a> <br />
               <a className='textColor' href='/contact'>Contact</a> <br />
-              <a className='textColor' href="https://drive.google.com/file/d/1be13iP5cijAPuqHotkEMBycITQBzChgK/view?usp=sharing" target={'_blank'}>Resume</a>
+              <a className='textColor' href='https://drive.google.com/file/d/1be13iP5cijAPuqHotkEMBycITQBzChgK/view?usp=sharing' target={'_blank'}>Resume</a>
             </p>
           </Col>
           <Col lg={3}>
             <p>
               <a style={{ fontSize: '10pt' }} className='textColor' href='mailto:raidelarama@gmail.com'>raidelarama@gmail.com</a> <br />
-              <a style={{ fontSize: '20pt' }} className='iconColor' href='https://www.linkedin.com/in/rachel-dela-rama/' target={'_blank'}><BsLinkedin /></a> <a style={{ fontSize: '20pt' }} className='iconColor' href='https://github.com/ShibuyaNobody' target={'_blank'}><BsGithub /></a>
+              <a style={{ fontSize: '20pt' }} className='iconColor' href='https://www.linkedin.com/in/rachel-dela-rama/' target={'_blank'}><BsLinkedin /></a> <a style={{ fontSize: '20pt' }} className='iconColor' href='https://github.com/ShibuyaNobody' target={'_blank'}><BsGithub /></a> <a style={{ fontSize: '20pt' }} className='iconColor' href="https://drive.google.com/file/d/1be13iP5cijAPuqHotkEMBycITQBzChgK/view?usp=sharing" target='_blank'><BsCloudDownloadFill /></a>
             </p>
           </Col>
         </Row>

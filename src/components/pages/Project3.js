@@ -23,11 +23,47 @@ export default function Project3() {
         <br></br>
 
         <Row>
+          <Col lg={8}>
+            <br></br>
+            <h3>What is Our Anime List?</h3>
+            <p>This project was designed and inspired by the popular website, <a className='reference' href='https://myanimelist.net/'>MyAnimeList</a>. The purpose of this website was designed to provide users the ability to search for anime, save anime they find interest in, and keep track of series they are currently watching. This project was done in collaboration with my group mates Monica Luong, Kimberly Rembamonte, Ye lu, and I. The site was created by using React, which is a free and open-source front-end JavaScript library for building user interfaces based on UI components.</p>
+          </Col>
+          <Col>
+            <Image style={{ height: '300px', width: 'auto', margin: '0px auto', display: 'block' }} fluid src={require('./../images/ouranimelist_icon_pog.png')} />
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
+          <Col lg={3}>
+            <Image data-aos="fade-in" className='center' fluid src={require('./../images/OAL_Wireframe1.jpg')} />
+          </Col>
+          <Col lg={3}>
+            <Image data-aos="fade-in" className='center' fluid src={require('./../images/OAL_Wireframe1.jpg')} />
+          </Col>
+          <Col>
+            <h3>Wireframes</h3>
+            <p>When designing Our Anime List we tried took inspiration for it's layout through other Anime Websites. Through our research we tried to find the best possible appearance that would work with what we want to accomplish in the end, and also be easy for the user to use and navigate through. What you see on the left here are the original wireframes I had put together when trying to figure out how to initially layout our site. These two wireframes represent the homepage and profile page of Our Anime List.</p>
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
+          <Col>
+            <h1>The redesign</h1>
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
             <Col>
             <Image data-aos="fade-in" className='center' fluid src={require('./../images/ouranimelist_home.png')} />
             </Col>
         </Row>
-        
+
         <br></br>
 
         <Row>

@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { Container, Row, Col, Navbar, Nav, NavDropdown, Card, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'react-bootstrap/Image'
 import Navi from './components/Navi'
@@ -15,7 +15,6 @@ import aos from 'aos';
 import 'aos/dist/aos.css';
 import { BsLinkedin, BsGithub  } from "react-icons/bs";
 import ScrollButton from './components/ScrollButton';
-import { Content, Heading } from './components/Styles';
 
 function App() {
   // These functions are used to allow the dropdown on hover with bootstraps Navbar

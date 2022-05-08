@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../../App.css';
-import { Container, Row, Col, Navbar, Nav, NavDropdown, Card, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import aos from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'react-bootstrap/Image'
@@ -133,7 +133,18 @@ export default function Project1() {
 
         <Row>
           <Col>
-            <p>For this websites redesign, I wanted to give the page a more comic book feel to it, while also making it look more modern and appearling s well. From what you saw of the previous images that were </p>
+            <p>For this websites redesign, I wanted to give the page a more comic book feel to it, while also making it look more modern and appearing as well. From what you saw of the previous images you can see how boring and out of date the site used to look. There wasn't much of a color scheme to the whole site, and it appeared to be very bland. Here is the original style tile and logo redesign I created for the site.</p>
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
+          <Col>
+            <Image style={{ padding: '80px', margin: '0px auto', display: 'block' }} fluid src={require('./../images/njoy_logo_redo3.png')} />
+          </Col>
+          <Col>
+            <Image style={{ margin: '0px auto', display: 'block' }} fluid src={require('./../images/njoy_styletile.png')} />
           </Col>
         </Row>
     </>

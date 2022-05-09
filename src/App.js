@@ -38,29 +38,6 @@ function App() {
     audio.play()
   }
 
-  const loopArr = [
-    "sentence1",
-    "sentence2",
-    "sentence3",
-    "sentence4",
-    "sentence5",
-    "sentence5 sentence5"
-  ];
-
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalDelayMilliseconds = loopArr[index].length * 500;
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => {
-        // reset index if current index is greater than array size
-        return prevIndex + 1 < loopArr.length ? prevIndex + 1 : 0;
-      });
-    }, intervalDelayMilliseconds);
-
-    return () => clearInterval(interval);
-  });
-
   return (
     <>
       <div className='body'>
@@ -85,7 +62,7 @@ function App() {
         {/* Dog */}
         <Row>
           <Col>
-          <Image style={{ float: 'right', height: '50px', width: 'auto' }} src={require('./components/images/Annoying_Dog_sprite.gif')} onClick={start} alt="All rights to this dog belong to Toby Fox, creator of Undertale" />
+          <a href='https://shibuyanobody.com/test.html' target='_blank'><Image style={{ float: 'right', height: '50px', width: 'auto' }} src={require('./components/images/Annoying_Dog_sprite.gif')} onClick={start} alt="All rights to this dog belong to Toby Fox, creator of Undertale" /></a>
           </Col>
         </Row>
 

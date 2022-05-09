@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import '../../App.css';
-import { Container, Row, Col, Navbar, Nav, NavDropdown, Card, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import aos from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'react-bootstrap/Image'
@@ -83,6 +83,14 @@ export default function Project3() {
         <Row>
           <Col>
             <h1>The redesign</h1>
+          </Col>
+        </Row>
+
+        <br></br>
+
+        <Row>
+          <Col>
+            <p>Redesigning our website was a step that we weren't expecting to make, but we had decided to go forward with it after deciding that it looked cleaner and gave us more opportunity to experiment and learn new things with the switch over to React. The first tasks we wanted to get out of the way when deciding this change was adding and making adjustments to our navigation bar that had a better dropdown menu system. The next step that we took and wanted to try out was the addition of a log in modal. We wanted to do this to make the page feel more dynamic so that whenever you click on the login portion of the page it wouldn't take you to a new page, but instead appear over whatever page you clicked it on. After that we decided to implement the API into our design and first got the suggestions and top animes to load up on the homepage, and then began to work on the search feature of Our Anime List. These features will all lead to pages that we have designed for our website, but during initial testing we had the API take us to the actual My Anime List page to make sure that the redirection was working to begin with and going to the right pages.</p>
           </Col>
         </Row>
 

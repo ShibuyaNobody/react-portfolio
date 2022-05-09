@@ -2,17 +2,8 @@ import React, { useState } from 'react';
 import './Navi.css';
 import { Container, Col, Row, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
 
 function Navi() {
-    // const [show, setShow] = useState(false);
-    // const showDropdown = (e)=>{
-    //     setShow(!show);
-    // }
-    // const hideDropdown = e => {
-    //     setShow(false);
-    // }
-
     const [isHovered, setIsHovered] = useState(false);
     const [isClicked, setIsClicked] = useState(false);
 

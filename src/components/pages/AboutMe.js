@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './../../App.css';
-import { Container, Row, Col, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import {  Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
 import Image from 'react-bootstrap/Image';
 import aos from 'aos';
 import 'aos/dist/aos.css';
@@ -27,10 +26,10 @@ export default function AboutMe() {
         {/* Image and Speech bubble */}
         <Row>
           <Col xs={9} sm={9} md={8} lg={3}>
-            <Image fluid data-aos="fade" className='profile' src={require('./../images/profilepc.jpg')}/>
+            <Image fluid data-aos="fade" className='profile' src={require('./../images/profilepc.jpg')} alt='Image of Rai' />
           </Col>
           <Col sm={12} lg={4} className="d-none d-lg-block">
-            <Image data-aos="fade-up" className='speech' src={require('./../images/speech-bubble2.png')} />
+            <Image data-aos="fade-up" className='speech' src={require('./../images/speech-bubble3.png')} alt='speech bubble' />
           </Col>
           {/* <Col lg={12}>
             <Image fluid className='speech' src={require('./components/images/speech-bubble2.png')} />
@@ -51,6 +50,8 @@ export default function AboutMe() {
           Hi! My name is Rai and I'm an aspiring web developer who studied at California State University of Northridge. I majored in Computer Information Technology and had a minor of Art. Putting these two together you get the best of both worlds, or well, for me at least that is the best of both worlds. I'm someone who has always had an interest in computers and art, so what better way to put those together by becoming a web developer! It actually took me some time to really find what I loved doing, but after taking a couple of classes while attending CSUN I found how much I really enjoyed developing web pages and trying to make them to the best of my ability. I could spend hours just sitting on a piece of code and making sure the site populates just the way I like it!</p>
 
           <p className='tab'>Besides developing web pages I like to think of myself as a hobbyist! Some hobbies I enjoy are Cardistry, which is the art of juggling cards, playing with Balisongs, Yo-yos, skating, music, and bowling! If I'm not doing any of these I'll be one to try and get some time to play some video games when I can!</p>
+
+          <Image fluid className='center' src={require('./../images/cardistry.png')} style={{ height: '400px', width: 'auto' }} alt='Is this your card?' />
           </Col>
         </Row>
 
@@ -81,9 +82,6 @@ export default function AboutMe() {
             <li>Google Suite</li>
             <li>Office 365</li>
             <li>Figma</li>
-            {/* <li>Yes</li>
-            <li>Yes</li>
-            <li>Yes</li> */}
           </ul>
         </Col>
         <Col style={{ marginBottom: '10px' }}  data-aos="zoom-in" className='center bgColor' lg={3}>
@@ -113,7 +111,6 @@ export default function AboutMe() {
             <li>Leadership</li>
             <li>Organization</li>
             <li>Teamwork</li>
-            {/* <li>Yes</li> */}
           </ul>
         </Col>
       </Row>
@@ -129,9 +126,6 @@ export default function AboutMe() {
             <a data-aos="fade-up" data-aos-duration="2000" style={{ fontSize: '60pt', padding: '0px 40px' }} className='iconColor' href="https://drive.google.com/file/d/1be13iP5cijAPuqHotkEMBycITQBzChgK/view?usp=sharing" target='_blank'><BsCloudDownloadFill /></a>
             </p>
           </Col>
-          {/* <Col data-aos="fade-in" data-aos-duration="4000" lg={6}>
-            <Image style={{  }} fluid src={require('./../images/cardistry.png')}/>
-          </Col> */}
         </Row>
 
     </>

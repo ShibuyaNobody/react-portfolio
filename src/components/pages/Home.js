@@ -120,80 +120,12 @@ export default function Home() {
           <Image fluid className='rounded-circle' src={require('./../images/raikiridesu2.png')} />
         </Col>
         <Col className='paddingSpace' lg={9}>
-          <p className='bodyText'>Hi! My name is Rai, and I'm aspiring to be a web developer. I studied at California State University of Northridge and majored in Computer Information Technology with a minor of Art.</p>
+          <p className='bodyText'>Hi! My name is Rai, and I'm a Web Developer and UI/UX Designer. I studied at California State University of Northridge and majored in Computer Information Technology with a minor of Art. I decided to pursue Web Development and UI/UX Designer because it felt like the perfect balance between my two worlds. If you want to learn a little bit about me and what I can do checkout my about me!
+          <br></br>
+          <br></br>
+          <Link to='/about-me'><Button variant='light'>Learn more here!</Button></Link></p>
         </Col>
       </Row>
-
-      <br></br>
-
-      {/* <Row data-aos="fade-right" className='titleBg d-lg-block d-md-none d-sm-none d-none'>
-        <Col>
-          <h1 style={{ margin: '5px 62px' }}>Skills</h1>
-        </Col>
-      </Row>
-
-      <Row data-aos="fade-right" className='titleBg d-lg-none d-md-block d-sm-none'>
-        <Col>
-          <h1 style={{ margin: '5px 0px' }}>Skills</h1>
-        </Col>
-      </Row>
-
-      <br></br>
-
-      <Row>
-        <Col style={{ marginBottom: '10px' }} data-aos="zoom-in" className='center bgColor' lg={3}>
-          <br></br>
-          <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Programs</h4>
-          <ul>
-            <li>Adobe Illustrator</li>
-            <li>Adobe Photoshop</li>
-            <li>Adobe InDesign</li>
-            <li>Google Suite</li>
-            <li>Office 365</li>
-            <li>Figma</li>
-          </ul>
-        </Col>
-        <Col style={{ marginBottom: '10px' }}  data-aos="zoom-in" className='center bgColor' lg={3}>
-          <br></br>
-          <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Skills</h4>
-          <ul>
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>Bash</li>
-            <li>Powershell</li>
-            <li>Terraform</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Docker</li>
-            <li>Bootstrap</li>
-          </ul>
-        </Col>
-        <Col style={{ marginBottom: '10px' }} data-aos="zoom-in" className='center bgColor' lg={3}>
-          <br></br>
-          <h4 style={{ textAlign: 'center', backgroundColor: 'black' }}>Social Skills</h4>
-          <ul>
-            <li>Communication</li>
-            <li>Video and Remote Skills</li>
-            <li>Active Listening</li>
-            <li>Problem Solving</li>
-            <li>Management</li>
-            <li>Leadership</li>
-            <li>Organization</li>
-            <li>Teamwork</li>
-          </ul>
-        </Col>
-      </Row> */}
-
-      {/* <br></br> */}
-
-      {/* <Row data-aos="fade-up" className='bgBoxcolor'>
-        <Col lg={5}>
-          <h4 style={{ textAlign: 'center' }}>Checkout these links as well!</h4>
-        </Col>
-        <Col lg={7}>
-          Put social icons here with clickable links to LinkedIn, GitHub, and such. Right align?
-        </Col>
-      </Row> */}
     </>
   );
 }

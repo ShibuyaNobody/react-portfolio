@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import '../../App.css';
 import { Row, Col } from 'react-bootstrap';
 import aos from 'aos';
@@ -82,22 +82,6 @@ export default function Project1() {
             </ul>
           </Col>
         </Row>
-
-        {/* <br></br>
-
-        <Row>
-          <Col>
-            <h3>Some other issues</h3>
-            <ul>
-              <li>
-                Pages were unorganized and messy
-              </li>
-              <li>
-                A lot of the navigation items were pointless and led nowhere
-              </li>
-            </ul>
-          </Col>
-        </Row> */}
 
         <br></br>
 

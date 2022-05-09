@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Row, Col, Form, Button } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 
 export default function Contact() {
@@ -14,12 +14,6 @@ export default function Contact() {
         </Row>
 
         <br></br>
-
-        {/* <Row>
-            <Col>
-                <h1>Feel free to contact me!</h1>
-            </Col>
-        </Row> */}
 
         <Row>
             <Col>

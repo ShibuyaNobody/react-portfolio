@@ -8,6 +8,12 @@
   
   .navbar-brand {
     font-family: 'Saira', sans-serif;
+    color: #ffffff;
+  }
+  .navbar-brand:hover {
+    color: #C4995A;
+  -webkit-transition: #C4995A .8s; /* For Safari 3.0 to 6.0 */
+  transition: #C4995A .8s; /* For modern browsers */
   }
   
   .collasible-nav-dropdown {
@@ -20,7 +26,12 @@
     transition: color .8s; /* For modern browsers */
   }
   .navbar-dark .navbar-nav .nav-link {
-    color: #C4995A;
-    -webkit-transition: color .8s; /* For Safari 3.0 to 6.0 */
-    transition: color .8s; /* For modern browsers */
+    color: #ffffff;
+    -webkit-transition: #C4995A .8s; /* For Safari 3.0 to 6.0 */
+    transition: #C4995A .8s; /* For modern browsers */
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #C4995A;
+  -webkit-transition: #C4995A .8s; /* For Safari 3.0 to 6.0 */
+  transition: #C4995A .8s; /* For modern browsers */
 }

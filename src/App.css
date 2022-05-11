@@ -109,6 +109,9 @@ html {
 .btn-primary {
   background-color: #C4995A;
 }
+.btn {
+  background-color: #C4995A;
+}
 .bgBoxPro {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;

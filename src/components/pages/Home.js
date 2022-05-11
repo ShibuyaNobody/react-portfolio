@@ -6,26 +6,11 @@ import 'aos/dist/aos.css';
 import Image from 'react-bootstrap/Image'
 import { Link } from 'react-router-dom';
 
-export default function Home() {
-  // These functions are used to allow the dropdown on hover with bootstraps Navbar
-  const [show, setShow] = useState(false);
-  const showDropdown = (e)=>{
-      setShow(!show);
-  }
-  const hideDropdown = e => {
-      setShow(false);
-  }
-  
+export default function Home() {  
   // This will allow the scroll animations to work
   useEffect(() => {
     aos.init({duration: 2000});
   }, []);
-  // bork
-  let audio = new Audio("../assets/bark.mp3")
-
-  const start = () => {
-    audio.play()
-  }
   return (
     <>
       {/* Banner */}
@@ -55,10 +40,13 @@ export default function Home() {
           <Image fluid className='center' src={require('./../images/njoy_logo_redo3.png')} style={{ paddingTop: '60px' }} />
         </Col>
         <Col lg={8}>
-          <p className='bodyText'>My expertise in UI.UX Design shone in my redesign of the website <a className='reference' href='https://www.njoy.us/'>Njoy Games and Comics</a>. Njoy Games & Comics is a small comic book store that is located along Reseda Blvd in Northridge, California. They have been in business from 2002 to today. I optimized the page by reformatting the navigation bar to highlight products that they sell rather than the excessive navigation bar they had previously, adjusted web page to provide the actual products being sold, and such.. They specialize in the sales of comocs books, playimng cards, and other collectibles. I highlighted the business' goals of selling more of these products by bringing more attention to the products that they primarily focus on selling. Previously, the site had many links that would lead to empty pages and search results, making it difficult for the user to find products on the webpage. I also created a redesign of the logo to look more modern and fit better with the theme of the site.
-          <br></br>
-          <br></br>
-          <Link to='/project-1'><Button style={{ float: 'right' }} variant='light'>Check it out!</Button></Link></p>
+          <p className='bodyText'>
+            <h1>Njoy Games & Comics</h1>
+            My expertise in UI.UX Design shone in my redesign of the website <a className='reference' href='https://www.njoy.us/'>Njoy Games and Comics</a>. Njoy Games & Comics is a small comic book store that is located along Reseda Blvd in Northridge, California. They have been in business from 2002 to today. I optimized the page by reformatting the navigation bar to highlight products that they sell rather than the excessive navigation bar they had previously, adjusted web page to provide the actual products being sold, and such.. They specialize in the sales of comocs books, playimng cards, and other collectibles. I highlighted the business' goals of selling more of these products by bringing more attention to the products that they primarily focus on selling. Previously, the site had many links that would lead to empty pages and search results, making it difficult for the user to find products on the webpage. I also created a redesign of the logo to look more modern and fit better with the theme of the site.
+            <br></br>
+            <br></br>
+            <Link to='/project-1'><Button variant='light'>Check it out!</Button></Link>
+          </p>
         </Col>
         <Col lg={4} className="d-none d-lg-block">
           <Image fluid className='center' src={require('./../images/njoy_logo_redo3.png')} style={{ paddingTop: '60px' }} />
@@ -72,10 +60,13 @@ export default function Home() {
           <Image className='center' style={{ paddingTop: '40px' }} fluid src={require('./../images/dogeincorporated_Logo.png')} />
         </Col>
         <Col lg={8}>
-          <p className='bodyText'>This project is a mockup of a company website that provides information about the company and how to contact them. This project was done purely for practice to test my capabilities with Bootstrap, but making it my own at the same time.
+          <p className='bodyText'>
+            <h1>Doge Incorporated</h1>
+            This project is a mockup of a company website that provides information about the company and how to contact them. This project was done purely for practice to test my capabilities with Bootstrap, but making it my own at the same time.
             <br></br>
             <br></br>
-            <Link to='/project-2'><Button variant='light'>Check it out!</Button></Link></p>
+            <Link to='/project-2'><Button variant='light'>Check it out!</Button></Link>
+          </p>
         </Col>
       </Row>
 
@@ -86,10 +77,13 @@ export default function Home() {
           <Image fluid className='center' style={{ height: '300px', width: 'auto' }} src={require('./../images/ouranimelist_icon_pog.png')} />
         </Col>
         <Col lg={8}>
-          <p className='bodyText' >This project was designed and inspired by the popular website, <a className='reference' href='https://myanimelist.net/'>MyAnimeList</a>. The purpose of this website was designed to provide users the ability to search for anime, save anime they find interest in, and keep track of series they are currently watching. This project was done in collaboration with my group mates Monica Luong, Kimberly Rembamonte, Ye lu, and I. The site was created by using React, which is a free and open-source front-end JavaScript library for building user interfaces based on UI components.
-          <br></br>
-          <br></br>
-          <Link to='/project-3'><Button style={{ float: 'right' }} variant='light'>Check it out!</Button></Link></p>
+          <p className='bodyText' >
+            <h1>Our Anime List</h1>
+            This project was designed and inspired by the popular website, <a className='reference' href='https://myanimelist.net/'>MyAnimeList</a>. The purpose of this website was designed to provide users the ability to search for anime, save anime they find interest in, and keep track of series they are currently watching. This project was done in collaboration with my group mates Monica Luong, Kimberly Rembamonte, Ye lu, and I. The site was created by using React, which is a free and open-source front-end JavaScript library for building user interfaces based on UI components.
+            <br></br>
+            <br></br>
+            <Link to='/project-3'><Button variant='light'>Check it out!</Button></Link>
+          </p>
           
         </Col>
         <Col lg={4} className="d-none d-lg-block">

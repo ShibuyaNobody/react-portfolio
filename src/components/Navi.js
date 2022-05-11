@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navi.css';
-import { Container, Col, Row, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Col, Row, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navi() {
@@ -12,7 +12,7 @@ function Navi() {
           <Col>
             <Row>
               <Navbar collapseOnSelect expand="lg" variant="dark" style={{ backgroundColor: 'black',  }}>
-              <Navbar.Brand style={{ color: '#C4995A' }} href="/">Rai Dela Rama</Navbar.Brand>
+              <Navbar.Brand  href="/">Rai Dela Rama</Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
@@ -23,9 +23,9 @@ function Navi() {
                   onMouseLeave={() => setIsHovered(false)}
                   onToggle={() => setIsClicked(!isClicked)}
                   show={isClicked || isHovered}>
-                    <NavDropdown.Item href="/project-1">Project 1</NavDropdown.Item>
-                    <NavDropdown.Item href="/project-2">Project 2</NavDropdown.Item>
-                    <NavDropdown.Item href="/project-3">Project 3</NavDropdown.Item>
+                    <NavDropdown.Item href="/project-1">Njoy Games & Comics</NavDropdown.Item>
+                    <NavDropdown.Item href="/project-2">Doge Incorporated</NavDropdown.Item>
+                    <NavDropdown.Item href="/project-3">Our Anime List</NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
               </Navbar.Collapse>

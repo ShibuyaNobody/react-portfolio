@@ -37,7 +37,7 @@ export default function Home() {
 
       <Row data-aos="fade-right" className='bgBoxPro' id='project1'>
         <Col lg={4} className="d-lg-none d-md-block d-sm-none">
-          <Image fluid className='center' src={require('./../images/njoy_logo_redo3.png')} style={{ paddingTop: '60px' }} />
+        <Image fluid className='center' src={require('./../images/njoy_full.png')} style={{ paddingTop: '60px', height: '500px' }} />
         </Col>
         <Col lg={8}>
           <p className='bodyText'>
@@ -49,7 +49,7 @@ export default function Home() {
           </p>
         </Col>
         <Col lg={4} className="d-none d-lg-block">
-          <Image fluid className='center' src={require('./../images/njoy_logo_redo3.png')} style={{ paddingTop: '60px' }} />
+          <Image fluid className='center' src={require('./../images/njoy_full.png')} style={{ paddingTop: '60px', height: '500px' }} />
         </Col>
       </Row>
 
@@ -57,7 +57,8 @@ export default function Home() {
 
       <Row data-aos="fade-left" className='bgBoxPro1' id='project2'>
         <Col lg={4}>
-          <Image className='center' style={{ paddingTop: '40px' }} fluid src={require('./../images/dogeincorporated_Logo.png')} />
+        <Image style={{ paddingTop: '40px', height: '220px' }} fluid src={require('./../images/dogeincorporated_snap.png')} />
+        <Image style={{ paddingTop: '40px', height: '220px' }} fluid src={require('./../images/dogeincorporated_snap2.png')} />
         </Col>
         <Col lg={8}>
           <p className='bodyText'>
@@ -74,7 +75,7 @@ export default function Home() {
 
       <Row data-aos="fade-right" className='bgBoxPro' id='project3'>
         <Col lg={4} className='d-lg-none d-md-block d-sm-none'>
-          <Image fluid className='center' style={{ height: '300px', width: 'auto' }} src={require('./../images/ouranimelist_icon_pog.png')} />
+          <Image fluid className='center' style={{ height: '300px', width: 'auto' }} src={require('./../images/OurAnimeList_Full.png')} />
         </Col>
         <Col lg={8}>
           <p className='bodyText' >
@@ -87,7 +88,7 @@ export default function Home() {
           
         </Col>
         <Col lg={4} className="d-none d-lg-block">
-          <Image fluid className='center' style={{ height: '300px', width: 'auto' }} src={require('./../images/ouranimelist_icon_pog.png')} />
+          <Image fluid className='center' style={{ height: '300px', width: 'auto' }} src={require('./../images/OurAnimeList_Full.png')} />
         </Col>
       </Row>
 

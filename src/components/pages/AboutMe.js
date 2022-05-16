@@ -51,7 +51,7 @@ export default function AboutMe() {
 
           <p className='tab'>Besides developing web pages I like to think of myself as a hobbyist! Some hobbies I enjoy are Cardistry, which is the art of juggling cards, playing with Balisongs, Yo-yos, skating, music, and bowling! If I'm not doing any of these I'll be one to try and get some time to play some video games when I can!</p>
 
-          <Image fluid className='center' src={require('./../images/cardistry.png')} style={{ height: '400px', width: 'auto' }} alt='Is this your card?' />
+          <Image fluid className='center' src={require('./../images/cardistry.png')} style={{ height: 'auto', width: '500px' }} alt='Is this your card?' />
           </Col>
         </Row>
 
